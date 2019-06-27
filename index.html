@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>Single Page Sliding Layout - Design Shack Demo</title>
+  <meta name="author" content="Joseph Harwood">
+  <link rel="shortcut icon" href="http://designshack.net/favicon.ico">
+  <link rel="icon" href="http://designshack.net/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+  <!-- <script src="jquery-3.4.1.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./jquery.js"></script>
+
+</head>
+
+<body>
+  <div id="topbar">
+    <h1> Joseph Harwood </h1>
+  </div>
+
+  <!-- <nav id="stickynav"> -->
+    <!-- <ul id="nav" class="clearfix"> -->
+    <ul class="sidenav">
+      <li><a href="#topbar" class="menu">Homepage</a></li>
+      <li><a href="#about" class="menu">About</a></li>
+      <li><a href="#projects" class="menu">Projects</a></li>
+      <li><a href="#resume" class="menu">Resume</a></li>
+      <li><a href="#contact" class="menu">Contact</a></li>
+    </ul>
+  <!-- </nav> -->
+
+  <div id="w">
+    <div id="content">
+
+      <section href="about" id="about" class="section">
+        <h1>About </h1>
+        <div>
+          <div class="description" align="left">
+            <div class="margin" align="left">
+              <p> I am a full-stack web developer with a passion for creating unique user
+              experiences using Ruby on Rails, JavaScript, and React, and a background
+              in database administration. A gaming enthusiast, bedroom guitarist, music lover,
+              film fanatic, chronic podcast listener, and Charleston native living in Brooklyn.
+              </p>
+            </div>
+          </div>
+          <br/>
+          <img src="./media/LinkedIn.jpg" width="50%" height="50%" class="picMe"/>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h1>Projects</h1>
+        <br/>
+        <div class="contactBody">
+          <div class="wrapper">
+            <header class="header">Cinematch</header>
+            <article class="main">
+              <p>Movie and TV recommendation website with a chat</p>
+            </article>
+            <aside class="aside aside-1">
+              <div class="project_images">
+                <img align="left" src="./media/rails.png" alt="Rails" title="Rails" class="project_image" id="img3"/>
+                <img align="left" src="./media/javascript.png" alt="Javascript" title="Javascript" class="project_image" id="img2"/>
+                <img align="left" src="./media/react.png" alt="React" title="React" class="project_image" id="img1"/>
+              </div>
+            </aside>
+            <aside class="aside aside-2">
+              <a href="https://cinematch-jbharwood.herokuapp.com" target="_blank"> Hosted Site </a> <br/>
+              <a href="https://github.com/jbharwood/cinematch-frontend" target="_blank"> Frontend </a> <br/>
+              <a href="https://github.com/jbharwood/cinematch-backend" target="_blank"> Backend </a>
+            </aside>
+            <footer class="footer">
+            </footer>
+          </div>
+        </div>
+        <br>
+        <div class="contactBody">
+          <div class="wrapper">
+            <header class="header">Quizalcoatl</header>
+            <article class="main">
+              <p>Snake trivia game incorporating a trivia element to the traditional snake game</p>
+            </article>
+            <aside class="aside aside-1">
+              <div class="project_images">
+                <img align="left" src="./media/rails.png" alt="Rails" title="Rails" class="project_image" id="img3"/>
+                <img align="left" src="./media/javascript.png" alt="Javascript" title="Javascript" class="project_image" id="img2"/>
+              </div>
+            </aside>
+            <aside class="aside aside-2">
+              <a href="https://github.com/jbharwood/quizalcoatl-frontend" target="_blank"> Frontend </a> <br/>
+              <a href="https://github.com/jbharwood/quizalcoatl-backend" target="_blank"> Backend </a>
+            </aside>
+            <footer class="footer">
+            </footer>
+          </div>
+        </div>
+      </section>
+
+      <section href="resume" id="resume" class="section">
+        <h1>Resume </h1>
+
+      </section>
+
+      <section href="contact" id="contact" class="section">
+        <h1>Contact </h1>
+        <div>
+          <div class="contactBody" align="left">
+            <div class="margin" align="left">
+              <p>Feel free to send me an email or contact me on any of these sites:</p>
+              <img align="left" src="./media/linkedincolor.png" alt="LinkedIn" title="LinkedIn" class="site_image"/>
+              <a href="https://www.linkedin.com/in/josephblakeharwood/" target="_blank"> LinkedIn </a>
+              <br/>
+              <br/>
+              <img align="left" src="./media/github.png" alt="Github" title="Github" class="site_image"/>
+              <a href="https://github.com/jbharwood" target="_blank"> Github </a>
+              <br/>
+              <br/>
+              <img align="left" src="./media/medium.png" alt="Blog" title="Blog" class="site_image"/>
+              <a href="https://medium.com/@josephharwood_62087" target="_blank"> Blog </a>
+              <br/>
+              <br/>
+              <p> josephblakeharwood@gmail.com </p>
+              </div>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- @end #content -->
+  </div><!-- @end #w -->
+
+<!-- <script type="text/javascript">
+  let mainNavLinks = document.querySelectorAll(".sidenav");
+  let mainSections = document.querySelectorAll(".section");
+
+  let lastId;
+  let cur = [];
+
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
+
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach(link => {
+      let section = document.querySelector(link.hash);
+
+      if (
+        section.offsetTop <= fromTop &&
+        section.offsetTop + section.offsetHeight > fromTop
+      ) {
+        link.classList.add(".selected");
+      } else {
+        link.classList.remove(."selected");
+      }
+    });
+  });
+</script> -->
+</body>
+</html>
