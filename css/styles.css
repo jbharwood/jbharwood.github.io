@@ -213,7 +213,7 @@ form .basictxt {
   width: 1020px;
   margin: 0 auto;
   margin-left: 20%;
-  padding-top: 30px;
+  /* padding-top: 30px; */
 }
 
 #content {
