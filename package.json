@@ -1,14 +1,5 @@
 {
   "dependencies": {
     "jquery": "^3.4.1"
-  },
-
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
   }
 }
