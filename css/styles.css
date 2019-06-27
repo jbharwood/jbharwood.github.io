@@ -14,7 +14,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   box-sizing: border-box;
 }
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 body {
   background: #f0f0f0;
@@ -89,7 +89,7 @@ img { border: 0; max-width: 100%; }
   opacity: 1;
 } */
 
-#stickynav {
+/* #stickynav {
   display: block;
   height: 35px;
   width: 100%;
@@ -117,7 +117,7 @@ img { border: 0; max-width: 100%; }
 
 #stickynav #nav li a.nav-active {
   color: #000;
-}
+} */
 
 
 /** typography **/

@@ -1,57 +1,69 @@
 $(document).ready(function(){
 
-  // $("#nav a").click(function(e){
+  // $("#a.menu").click(function(e){
   //   e.preventDefault();
   //   $('html,body').scrollTo(this.hash,this.hash);
   // });
 
-  // $('a.menu').click(function(){
-  //     // $('a.menu').css('color', '#818181');
-  //     // console.log(this);
-  //     // $(this).css('color', 'white');
+  // $('a.menu').click(function(e){
   //     $('a.menu').removeClass('selected');
   //     $(this).toggleClass('selected');
+  //     e.preventDefault();
   // })
 
-  // $('a.menu').click(function(){
-  //     $('a.menu').removeClass('selected');
-  //     $(this).toggleClass('selected');
-  // })
+  // $("a.menu").click(function(e) {
+  //   $('a.menu').removeClass('selected');
+  //   $(this).toggleClass('selected');
+  //   // $('html,body').animate({
+  //   //   scrollTop: $("#nav4").offset().top }, // Tell it to scroll to the top #bottom
+  //   //   1000 // How long scroll will take in milliseconds
+  //   // );
+  // });
+
+  // Add smooth scrolling to all links
+  $("a.menu").on('click', function(e) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      e.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      $('a.menu').removeClass('selected');
+      $(this).toggleClass('selected');
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
 
   $(document).bind('scroll',function(e){
       $('section').each(function(){
           if ($(this).offset().top < window.pageYOffset + 10 && $(this).offset().top + $(this).height() > window.pageYOffset + 10){
-              window.location.hash = $(this).attr('id');
+            window.location.hash = $(this).attr('id');
 
-              if($(this).attr('id') == "home"){
-                $('a.menu').removeClass('selected');
-                $("#nav1").toggleClass('selected')
-                // $("#nav1").css('color', '#4286f4');
-                // $("#nav2").css('color', '#818181');
-                // $("#nav3").css('color', '#818181');
-                // $("#nav4").css('color', '#818181');
-              }else if($(this).attr('id') == "projects"){
-                $('a.menu').removeClass('selected');
-                $("#nav2").toggleClass('selected')
-                // $("#nav1").css('color', '#818181');
-                // $("#nav3").css('color', '#818181');
-                // $("#nav4").css('color', '#818181');
-                // $("#nav2").css('color', '#4286f4');
-              }else if($(this).attr('id') == "resume"){
-                $('a.menu').removeClass('selected');
-                $("#nav3").toggleClass('selected')
-                // $("#nav1").css('color', '#818181');
-                // $("#nav2").css('color', '#818181');
-                // $("#nav4").css('color', '#818181');
-                // $("#nav3").css('color', '#4286f4');
-              }else if($(this).attr('id') == "contact"){
-                $('a.menu').removeClass('selected');
-                $("#nav4").toggleClass('selected')
-                // $("#nav1").css('color', '#818181');
-                // $("#nav2").css('color', '#818181');
-                // $("#nav3").css('color', '#818181');
-                // $("#nav4").css('color', '#4286f4');
-              }
+            if($(this).attr('id') == "home"){
+              $('a.menu').removeClass('selected');
+              $("#nav1").toggleClass('selected')
+            } else if($(this).attr('id') == "projects"){
+              $('a.menu').removeClass('selected');
+              $("#nav2").toggleClass('selected')
+            } else if($(this).attr('id') == "resume"){
+              $('a.menu').removeClass('selected');
+              $("#nav3").toggleClass('selected')
+            } else if($(this).attr('id') == "contact"){
+              $('a.menu').removeClass('selected');
+              $("#nav4").toggleClass('selected')
+            }
           }
       });
   });
