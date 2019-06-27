@@ -210,8 +210,9 @@ form .basictxt {
 /** page structure **/
 #w {
   display: block;
-  width: 750px;
+  width: 1000px;
   margin: 0 auto;
+  margin-left: 20%;
   padding-top: 30px;
 }
 
@@ -316,16 +317,4 @@ html[xmlns] .clearfix { display: block; }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
-
-.va-picker-item:hover {
-background-color: #000;
-}
-
-.va-picker-item:focus {
-    background-color: #FFF;
-}
-.va-pickers .va-picker.selected{
-  background:black;
-  color:white;
 }
