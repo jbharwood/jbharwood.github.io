@@ -296,7 +296,7 @@ html[xmlns] .clearfix { display: block; }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #4286f4;
+  color: white;
 }
 
 /* When you click the navigation links, change their color */
