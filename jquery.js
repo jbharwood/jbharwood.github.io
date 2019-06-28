@@ -1,25 +1,5 @@
 $(document).ready(function(){
 
-  // $("#a.menu").click(function(e){
-  //   e.preventDefault();
-  //   $('html,body').scrollTo(this.hash,this.hash);
-  // });
-
-  // $('a.menu').click(function(e){
-  //     $('a.menu').removeClass('selected');
-  //     $(this).toggleClass('selected');
-  //     e.preventDefault();
-  // })
-
-  // $("a.menu").click(function(e) {
-  //   $('a.menu').removeClass('selected');
-  //   $(this).toggleClass('selected');
-  //   // $('html,body').animate({
-  //   //   scrollTop: $("#nav4").offset().top }, // Tell it to scroll to the top #bottom
-  //   //   1000 // How long scroll will take in milliseconds
-  //   // );
-  // });
-
   // Add smooth scrolling to all links
   $("a.menu").on('click', function(e) {
 
@@ -68,6 +48,7 @@ $(document).ready(function(){
       });
   });
 
+  // fixes the bug that caused scrolling up to be faster
   function wheel(event) {
       var delta = 0;
       if (event.wheelDelta) {(delta = event.wheelDelta / 120);}

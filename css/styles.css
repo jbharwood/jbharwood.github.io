@@ -238,8 +238,12 @@ html[xmlns] .clearfix { display: block; }
 /* new stuff */
 
 .section {
-  height: 600px;
+  height: 650px;
   padding-top: 25px;
+}
+
+.bottom {
+  height: 650px;
 }
 
 .project_images {
@@ -318,4 +322,17 @@ html[xmlns] .clearfix { display: block; }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+.picMe {
+  border: 5px;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.drag-drop-item
+{
+  touch-action: none;
 }
