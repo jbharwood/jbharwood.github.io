@@ -332,7 +332,11 @@ html[xmlns] .clearfix { display: block; }
   margin-right: auto;
 }
 
-.drag-drop-item
-{
-  touch-action: none;
+.margin {
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+.contact {
+  text-align: center;
 }
