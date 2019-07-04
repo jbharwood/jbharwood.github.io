@@ -148,7 +148,7 @@ h1:after {
   width: 50%;
   height: 1px;
   vertical-align: middle;
-  background: #f0f0f0;
+  background: #4286f4;
 }
 h1:before {
   left: -.5em;
@@ -184,10 +184,6 @@ p {
   font-size: 1.35em;
   line-height: 1.5em;
   margin-bottom: 22px;
-}
-
-ul {
-  list-style: disc;
 }
 
 a { color: #4286f4; text-decoration: none; }
@@ -322,6 +318,51 @@ html[xmlns] .clearfix { display: block; }
    color: #4286f4;
 }
 
+.sideNavText {
+  position: relative;
+  left: 29%;
+  top: 15%;
+}
+
+.sideNavDesc {
+  position: relative;
+  left: 20%;
+  color: white;
+  font-weight: 900;
+}
+
+.roundedPic {
+  border-radius: 50%!important;
+}
+
+.sideNavPic {
+  /* margin-right: 20%; */
+  position: relative;
+  left: 13%;
+  top: 15%;
+}
+
+.contact_bar_image {
+  height: 4vh;
+  border-radius: 3px;
+  outline-style: hidden;
+  cursor: pointer;
+  /* margin: 0.8vw; */
+}
+
+.contact_bar_image:hover {
+  outline-style: solid;
+  outline-color: #4286f4;
+}
+
+.linkBar {
+  list-style: none;
+  display: flex;
+  position: relative;
+  top: 35%;
+  margin-left: 23%;
+}
+
 /* Style page content */
 .main {
   margin-left: 160px; /* Same as the width of the sidebar */
@@ -356,18 +397,21 @@ html[xmlns] .clearfix { display: block; }
 }
 
 .projectList {
+  list-style: disc;
   margin-left: 3%;
   position: relative;
   bottom: 1em;
 }
 
 .resumeList {
+  list-style: disc;
   margin-left: 3%;
   position: relative;
   bottom: 3em;
 }
 
 .educationList {
+  list-style: disc;
   margin-left: 3%;
   position: relative;
   bottom: 1.5em;
@@ -380,25 +424,4 @@ html[xmlns] .clearfix { display: block; }
 
 .italic {
   font-style: italic;
-}
-
-.contact_bar_image {
-  height: 4vh;
-  border-radius: 3px;
-  outline-style: hidden;
-  cursor: pointer;
-  /* margin: 0.8vw; */
-}
-
-.contact_bar_image:hover {
-  outline-style: solid;
-  outline-color: #4286f4;
-}
-
-.linkBar {
-  list-style: none;
-  display: flex;
-  position: relative;
-  top: 60%;
-  margin-left: 20%;
 }
