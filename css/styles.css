@@ -423,3 +423,16 @@ html[xmlns] .clearfix { display: block; }
   margin-right: .5%;
 	text-align: center;
 }
+
+.devicon-git-plain {
+  max-width: 7em;
+}
+
+/* if you want to change the original color */
+.devicon-git-plain path {
+  /* fill: #4286f4; */
+}
+
+.center {
+  text-align: center;
+}
