@@ -418,3 +418,8 @@ html[xmlns] .clearfix { display: block; }
 .italic {
   font-style: italic;
 }
+
+.download {
+  margin-right: .5%;
+	text-align: center;
+}
