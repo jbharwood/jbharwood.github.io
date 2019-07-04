@@ -377,3 +377,24 @@ html[xmlns] .clearfix { display: block; }
   position: relative;
   bottom: 1.3em;
 }
+
+.contact_bar_image {
+  height: 4vh;
+  border-radius: 3px;
+  outline-style: hidden;
+  cursor: pointer;
+  /* margin: 0.8vw; */
+}
+
+.contact_bar_image:hover {
+  outline-style: solid;
+  outline-color: #4286f4;
+}
+
+.linkBar {
+  list-style: none;
+  display: flex;
+  position: relative;
+  top: 60%;
+  margin-left: 20%;
+}
