@@ -134,7 +134,7 @@ h1 {
   letter-spacing: -0.05em;
   margin-bottom: 20px;
   padding: .1em 0;
-  color: #444;
+  color: #343a40;
 	position: relative;
 	overflow: hidden;
 	white-space: nowrap;
@@ -172,7 +172,7 @@ h2 {
   letter-spacing: normal;
   margin-bottom: 20px;
   padding: .1em 0;
-  color: #444;
+  color: #343a40;
 	position: relative;
 	overflow: hidden;
 	white-space: nowrap;
@@ -184,6 +184,10 @@ p {
   font-size: 1.35em;
   line-height: 1.5em;
   margin-bottom: 22px;
+}
+
+ul {
+  list-style: disc;
 }
 
 a { color: #4286f4; text-decoration: none; }
@@ -349,4 +353,27 @@ html[xmlns] .clearfix { display: block; }
 
 .body {
   margin-left: 5%;
+}
+
+.projectList {
+  margin-left: 3%;
+  position: relative;
+  bottom: 1em;
+}
+
+.resumeList {
+  margin-left: 3%;
+  position: relative;
+  bottom: 3em;
+}
+
+.educationList {
+  margin-left: 3%;
+  position: relative;
+  bottom: 1.5em;
+}
+
+.subParagraph {
+  position: relative;
+  bottom: 1.3em;
 }
