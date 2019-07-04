@@ -378,6 +378,10 @@ html[xmlns] .clearfix { display: block; }
   bottom: 1.3em;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .contact_bar_image {
   height: 4vh;
   border-radius: 3px;
