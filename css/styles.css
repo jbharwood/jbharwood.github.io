@@ -134,7 +134,7 @@ h1 {
   letter-spacing: -0.05em;
   margin-bottom: 20px;
   padding: .1em 0;
-  color: #343a40;
+  color: #111;
 	position: relative;
 	overflow: hidden;
 	white-space: nowrap;
@@ -172,7 +172,8 @@ h2 {
   letter-spacing: normal;
   margin-bottom: 20px;
   padding: .1em 0;
-  color: #343a40;
+  color: #111;
+  /* color: #343a40; */
 	position: relative;
 	overflow: hidden;
 	white-space: nowrap;
