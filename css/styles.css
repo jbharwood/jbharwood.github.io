@@ -252,9 +252,9 @@ html[xmlns] .clearfix { display: block; }
   padding-top: 25px;
 }
 
-.bottom {
+/* .bottom {
   height: 635px;
-}
+} */
 
 .project_images {
   display:flex;
