@@ -15,13 +15,27 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 html {
   /* scroll-behavior: smooth; */
+  overflow-y: auto;
 }
 body {
   background: #f0f0f0;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #313131;
-  font-size: 62.5%;
+  /* font-size: 62.5%; */
   line-height: 1;
+  font-size: 1rem;
+  text-align: left;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
 }
 
 ::selection { background: #a4dcec; }
@@ -293,7 +307,7 @@ html[xmlns] .clearfix { display: block; }
   color: #4286f4;
 } */
 
-/* When you mouse over the navigation links, change their color */
+/* When you click over the navigation links, change their color */
 .sidenav a:focus {
   color: #4286f4;
 }
@@ -339,4 +353,8 @@ html[xmlns] .clearfix { display: block; }
 
 .contact {
   text-align: center;
+}
+
+.body {
+  margin-left: 5%;
 }

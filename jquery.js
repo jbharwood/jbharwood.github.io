@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  // Add smooth scrolling to all links
+  // Add smooth scrolling to all links on click
   $("a.menu").on('click', function(e) {
 
     // Make sure this.hash has a value before overriding default behavior
@@ -26,6 +26,7 @@ $(document).ready(function(){
     } // End if
   });
 
+  // adds and removes selected class when the section is reached with the scroll
   $(document).bind('scroll',function(e){
       $('section').each(function(){
           if ($(this).offset().top < window.pageYOffset + 10 && $(this).offset().top + $(this).height() > window.pageYOffset + 10){
