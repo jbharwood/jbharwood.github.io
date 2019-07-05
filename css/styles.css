@@ -266,7 +266,7 @@ html[xmlns] .clearfix { display: block; }
 }
 
 .site_image {
-  height: 6vh;
+  height: 10vh;
   border-radius: 3px;
   outline-style: hidden;
   align: left;
