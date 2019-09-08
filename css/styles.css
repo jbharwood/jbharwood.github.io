@@ -367,12 +367,21 @@ html[xmlns] .clearfix { display: block; }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+
   #w {
     display: block;
     width: 1020px;
     width: 81%;
     margin: 0 auto;
     margin-left: 45%;
+  }
+
+  .contact_bar_image {
+    height: 2vh;
+    /* border-radius: 3px;
+    outline-style: hidden;
+    cursor: pointer; */
+    /* margin: 0.8vw; */
   }
 }
 
