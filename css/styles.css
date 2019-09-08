@@ -377,10 +377,10 @@ html[xmlns] .clearfix { display: block; }
   }
 
   .contact_bar_image {
-    height: 2vh;
-    /* border-radius: 3px;
+    height: 1vh;
+    border-radius: 3px;
     outline-style: hidden;
-    cursor: pointer; */
+    cursor: pointer;
     /* margin: 0.8vw; */
   }
 }
